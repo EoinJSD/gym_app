@@ -1,7 +1,7 @@
 .hubcontainer{
 	display: flex;
 	flex-direction: column;
-	width: 35vw;
+	width: 35%;
 	margin: auto;
 	box-shadow: 0px 5px 25px #BEBEBE;
 }
@@ -100,12 +100,41 @@
 }
 
 .menu{
-	display: flex;
-
+	width: 100%;
+	padding: 12px;
 }
 
-@media screen and (max-width: 800px){
+.options{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.options div{
+	width: 45%;
+	margin: 10px;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.options .workouts{
+	background-color: #E8F1F2;
+}
+.options .meals{
+	background-color: #247BA0;
+}
+.options .calendar{
+	background-color: #A2C7D6;
+}
+.options .trainer{
+	background-color: #C2D1D8;
+}
+
+
+
+@media screen and (max-width: 600px){
 	.hubcontainer{
-		width: 100vw;
+		width: 100%;
 	}
 }
