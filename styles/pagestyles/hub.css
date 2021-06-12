@@ -1,0 +1,104 @@
+.hubcontainer{
+	display: flex;
+	flex-direction: column;
+	width: 35vw;
+	margin: auto;
+	box-shadow: 0px 5px 25px #BEBEBE;
+}
+
+.mood{
+	background-color: #E8F1F2;
+    /* height: 270px; */
+    border-radius: 0 0 30px 30px;
+    padding: 55px;
+}
+
+.welcome h1{
+	font-size: 30pt;
+	color: #13293D;
+}
+
+.welcome p{
+	color: #000;
+	max-width: 156px;
+}
+
+.moodbar{
+	overflow-x: scroll;
+}
+
+.moodbar ul{
+	width: max-content;
+}
+
+.moodbar ul li{
+	display: inline;
+}
+
+.highlight{
+	width: 100%;
+	padding: 12px;
+}
+
+.todaysworkout{
+	background-color: #13293D;
+	border-radius: 20px 20px 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	width: 100%;
+}
+
+.image{
+	width: 20%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 0px;
+}
+.image img{
+	width: 100%;
+	height: auto;
+}
+
+.workoutcontent{
+    display: flex;
+    flex-direction: column;
+    color: #E8F1F2;
+    width: 80%;
+    /* justify-items: center; */
+    justify-content: center;
+    padding: 15px;
+}
+
+.label p, h1{
+	margin: 0;
+}
+
+.label p{
+	font-size: 18pt;
+}
+
+.label h1{
+	font-size: 25pt;
+}
+
+.workoutlink {
+    width: 100%;
+    /* height: auto; */
+    /* color: yellow; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.workoutlink a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18pt;
+    background-color: #1B98E0;
+    border-radius: 15px;
+    padding: 12px;
+}
+
+.menu{
+	display: flex;
+}

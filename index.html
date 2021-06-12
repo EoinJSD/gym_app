@@ -4,16 +4,31 @@
 		<title>My New Webpage</title>
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+		<script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<main>
-			<mynavbar></mynavbar>
 
-			<h1>User is: {{fname}} {{lname}} </h1>
-			<div v-html="newContent">test</div>
-		</main>
-		
-		<script src="./scripts/app.js"></script>
+		<div id="app">
+			
+			<div class="container">
+				<div class="flashbox">
+					<!-- for the image -->
+					<img src="" alt="" srcset="">
+				</div>
+				<div class="authbox">
+					<div class="authContainer">
+						<img :src="logoImage">
+						<login></login>
+						<signup></signup>
+						<!--<div class="signup"></div>-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="scripts/app.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+		<script src="scripts/jquery.js"></script>
 	</body>
 </html>

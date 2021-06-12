@@ -1,6 +1,3 @@
-
-
-
     Vue.component('mynavbar',{
         template: `
         <header id="navContainer">
@@ -17,25 +14,47 @@
         `
         })
 
-    Vue.component('aboutsection',{
-        template: `
-            <div class="BlueText">
-                <h1>This is the about section</h1>
-            </div>
-            `
+    Vue.component('logn',{
+        template:`
+        <div class="auth">
+            <h1>Log into your account</h1>
+                <input type="text" name="username" placeholder="Phone/Email">
+                <input type="password" name="password" placeholder="Passsworrd">
+                <button type="button">Sign In</button>
+            <span>Don't have and account? <a href="#">Sign Up</a></span>
+        </div>
+        `
     })
 
-    var app = new Vue({
-		el:             'main',
-		data:{
-            fname:      'Eoin',
-			lname:      'Dolan',
-            newContent: '<h2>This is from the app instance<//h2>',
+    Vue.component('signup',{
+        template:`
+        <div class="auth">
+            <h1>Start your journey here!</h1>
+                <input type="text" name="email" id="email" placeholder="Email Address">
+                <input type="text" name="mobile" id="mobile" placeholder="Phone Number">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="password" name="confpass" id="confpass" placeholder="Confirm Password">
+                <button type="button">SIGN UP</button>
+        </div>
+        `
+    })
 
-            homeLink:       'Home',
-            aboutLink:      'About',
-            mailIcon:       '<a href="#"><i class="fa fa-envelope" style="font-size:18px"></i></a>',
-            userLoggedIn:   '<a href="#">EoinyPony</a>',
-            flagIcon:       '<a href="#"><i style="font-size:18px">&#x2691;</i></a>'
+    /* creating routes for linking and navigation 
+    const routes = [
+        { path: "index.html", name: "index" },
+        { path: "onboarding.html", name: "onboarding" }
+    ];
+
+    //Instantiating the Vue Router 
+    const router = new VueRouter({
+        routes
+    })
+    */
+    var app = new Vue({
+		router,
+        el:             '#app',
+		data:{
+            loggedIn:   true,
+            logoImage:  'resources/FFPlus_Logo.png'
 		}
     })
