@@ -101,4 +101,11 @@
 
 .menu{
 	display: flex;
+
+}
+
+@media screen and (max-width: 800px){
+	.hubcontainer{
+		width: 100vw;
+	}
 }
