@@ -1,7 +1,7 @@
 .hubcontainer{
 	display: flex;
 	flex-direction: column;
-	width: 35%;
+	width: 30%;
 	margin: auto;
 	box-shadow: 0px 5px 25px #BEBEBE;
 }
@@ -88,6 +88,7 @@
     /* color: yellow; */
     display: flex;
     justify-content: flex-end;
+	padding: 10px 0 0 0;
 }
 
 .workoutlink a {
@@ -95,8 +96,6 @@
     color: #fff;
     font-size: 18pt;
     background-color: #1B98E0;
-    border-radius: 15px;
-    padding: 12px;
 }
 
 .menu{
@@ -131,10 +130,75 @@
 	background-color: #C2D1D8;
 }
 
+.event{
+	width: 100%;
+	padding: 12px;
+}
 
+.nextevent{
+	background-color: #1B98E0;
+	border-radius: 20px 20px 0px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+	width: 100%;
+}
+
+.nextevent h1{
+	color: 	#E8F1F2;
+}
+
+.nextevent a{
+	text-decoration: none;
+	background-color: #13293D;
+	font-size: 18pt;
+    border-radius: 15px;
+	color: 	#E8F1F2;
+}
+
+a{
+	font-weight: 700;
+	padding: 12px;
+    border-radius: 15px;
+}
+
+nav {
+	background-color: #13293D;
+	color: #E8F1F2;
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin: auto;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	display: inline;
+}
+
+.yellow{
+	background-color: yellow;
+
+}
+
+.blue{
+	color: blue;
+}
+
+.green{
+	color: green;
+}
 
 @media screen and (max-width: 600px){
 	.hubcontainer{
+		width: 100%;
+	}
+	nav{
 		width: 100%;
 	}
 }
