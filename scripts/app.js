@@ -306,7 +306,7 @@ const YourWorkouts = Vue.component('your_workouts', {
         <div class="todaysworkout">
 
             <div class="content">
-                <a href="#">B</a>
+                <a href="#/member_hub">Back</a>
                 <div class="label">
                     <p>Today's workout...</p>
                     <h1>Cardio & Mobility</h1>
