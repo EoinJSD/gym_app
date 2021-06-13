@@ -2,16 +2,60 @@
 <html>
 	<head>
 		<title>Contact | My New Webpage</title>
-		<link rel="stylesheet" href="../styles/main.css">
-		<link rel="stylesheet" href="../styles/contactstyles/contactstyles.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/pagestyles/yourworkouts.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 	</head>
 	<body>
-		<main>
-			<mynavbar></mynavbar>
-		</main>
+		<div id="app">
+			<div class="ywcontainer">
+				<div class="todaysworkout">
 
-		<script src="../scripts/app.js"></script>
+					<div class="content">
+						<a href="#">B</a>
+						<div class="label">
+							<p>Today's workout...</p>
+							<h1>Cardio & Mobility</h1>
+						</div>
+						<div class="image">
+							<img src="resources/workout_figure.png">
+						</div>
+					</div>
+
+					<div class="workoutcard">
+						<div class="workout">
+							<span>Air-Bike</span>
+
+							<ul class="headings">
+								<li>Set</li>
+								<li>Description</li>
+								<li>Reps/Intensity</li>
+							</ul>
+							<ul class="workoutdetails">
+								<li>2 minute Sprint</li>
+								<li>1 minute Sprint</li>
+								<li>30 Seconds Sprint</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="menu">
+					<h1>Your workouts</h1>
+					<div class="workoutfeed">
+						<div class="createworkout">
+							<div class="createcard">
+								<h1>Create your own</h1>
+								<a href="#">+</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/app.js"></script>
 	</body>
 </html>

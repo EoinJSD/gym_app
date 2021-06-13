@@ -4,13 +4,14 @@
 		<title>My New Webpage</title>
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="styles/pagestyles/hub.css">
+		<link rel="stylesheet" href="styles/pagestyles/yourworkouts.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script  src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 
 		<div id="app">			
-			<div v-if="userLoggedIn">
+			<!-- <div v-if="userLoggedIn">
 				<nav>
 					<ul>
 						<li>HOME</li>
@@ -19,7 +20,7 @@
 						<li>PROF</li>
 					</ul>
 				</nav>
-			</div>
+			</div> -->
 			<router-view :key="$router.path" /> <!-- Listens to the path in the url - presents what is in that cmponent path-->
 		</div>
 
